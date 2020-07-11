@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="scr.js"></script>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+    </style>
+        
+</head>
+<body>
+    <table style="width:100%">
+        <tr>
+            <td>
+                <input type="number"   id="time" value="1000">
+                <button  onclick="change()">Submit</button>
+            </td>
+            <td><img name='slide' src="red.jpg" style="max-width: 200px; max-height: auto;" id="demo"></td>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" id="first">
+              <input type="text" id="second">
+              <input type="button" onclick="cal('+')" value="Addition">
+              <input type="button" onclick="cal('-')" value="Subtraction">
+              <input type="button" onclick="cal('/')" value="Division">
+              <input type="button" onclick="cal('*')" value="Multiplication">
+            </td>
+            <td><input id="val"></td>
+          </tr>
+          <tr>
+            <td><input type="text" id="myInput" oninput="myFunction()"></td>
+          </tr>
+    </table>
+</body>
+</html>
